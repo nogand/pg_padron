@@ -12,3 +12,9 @@ fromdos distelec.txt.utf8
 fromdos PADRON_COMPLETO.txt.utf8
 awk -f ./separardist.awk distelec.txt.utf8
 awk -f prepararpersonas.awk PADRON_COMPLETO.txt.utf8
+psql padron <<eow
+\copy provincia FROM './provincias.txt' CSV ;
+\copy canton FROM './cantones.txt' CSV ;
+\copy distrito FROM './distritos.txt' CSV;
+\copy ciudadano FROM './personas.txt' CSV;
+eow
