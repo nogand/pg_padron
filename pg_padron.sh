@@ -1,5 +1,5 @@
 #!/bin/bash
-# Asume que existe una base de datos vacía que se llama padrón y el usuario actual tiene acceso a ella.
+# Asume que existe una base de datos vacía que se llama padrón y el usuario actual, llamado admin, tiene acceso a ella.
 # No tiene nada de control de errores, en este momento.
 # Requiere que estén instalados wget, unzip, iconv y fromdos
 # Asume que awk es gawk
