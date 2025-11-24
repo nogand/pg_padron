@@ -3,7 +3,7 @@
 # No tiene nada de control de errores, en este momento.
 # Requiere que estén instalados wget, unzip, iconv y fromdos
 # Asume que awk es gawk
-psql < esquema.sql
+psql padron < esquema.sql
 wget https://tse.go.cr/zip/padron/padron_completo.zip
 unzip padron_completo.zip
 iconv -f iso-8859-1 -t utf-8 -o distelec.txt.utf8 distelec.txt
